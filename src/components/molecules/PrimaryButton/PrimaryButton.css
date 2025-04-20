@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primary-button {
+    background-color: rgb(242, 203, 245);
+    color:  hsl(295, 46%, 35%);
+        padding: 10px 25px;
+    font-size: 15px;
+    width: 300px;
+    font-weight: bolder;
+    border: 1px solid rgba(115, 32, 136, 0.2);
+    border-bottom: 5px solid rgba(115, 32, 136, 0.2);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    background-color: #daa5e0;
+    border-color: rgb(131, 78, 136);;
+    font-size: 1.2em;
+}

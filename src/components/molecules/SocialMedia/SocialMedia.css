@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+.icon {
+    display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ font-size: 22px;
+}
+
+.icon:hover {
+    font-size: 30px;
+}
+
+.icon:active {
+    background-color:#a989cf;
+    font-size: 32px;
+}
