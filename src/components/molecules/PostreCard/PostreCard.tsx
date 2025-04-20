@@ -1,7 +1,6 @@
 import React from "react";
 import "./PostreCard.css";
 import WhatsAppButton from "../WhatsAppButton/WhatsAppButton";
-import Linea from "../../atoms/Linea/Linea";
 
 interface PostreCardProps {
     nombre: string;

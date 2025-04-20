@@ -1,4 +1,3 @@
-import { GiChocolateBar } from "react-icons/gi";
 import { GiFruitBowl } from "react-icons/gi";
 
 

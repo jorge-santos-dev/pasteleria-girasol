@@ -1,4 +1,3 @@
-import Header from "../../components/organisms/Header";
 import ContactanosTemplate from "../../components/templates/ContactanosTemplate";
 import "./Contactanos.css";
 

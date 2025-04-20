@@ -56,7 +56,7 @@ const PastelCard: React.FC<PastelCardProps> = ({
       <p className="poppins-medium">{descripcion}</p>
       <p className="poppins-semibold">{categoria}</p>
       <div className="card-footer">
-      <span className="price">{`$${formatearPrecio(precio)}`}</span>        <WhatsAppButton text="WhatsApp" />
+      <span className="price">{`$${formatearPrecio(precio)}`}</span>        <WhatsAppButton functionProp={abrirWhatsApp} text="WhatsApp" />
       </div>
     </div>
   );
