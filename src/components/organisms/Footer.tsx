@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary text-girasol-cream p-8 mt-12"> {/* Fondo oscuro, texto claro, padding, margen superior */}
+    <footer className="flex flex-col bg-secondary text-girasol-cream p-8 mt-12"> {/* Fondo oscuro, texto claro, padding, margen superior */}
       <div className='flex justify-between'>
       <div className='flex flex-col ml-16'>
   <h3 className="text-xl font-semibold mb-3 font-dancing text-primary">Pastelería Girasol</h3>

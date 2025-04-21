@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function SocialMedia() {
   return (
-    <div className="flex gap-5 mr-16">
+    <div className="flex gap-5 mr-16 hidden sm:flex">
       <Link className="icon" to="https://wa.me/5212721839540">
         <RiWhatsappFill size={25}  color="#63aa5d" />
       </Link>
