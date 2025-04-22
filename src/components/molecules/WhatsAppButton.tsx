@@ -12,7 +12,7 @@ const WhatsAppButton: React.FC<WhatsppButtonProps> = ({
 }) => {
   return (
       <button 
-        className="bg-[#73e63e] hover:bg-[#5bb432] text-white font-bold py-2.5 px-6 text-sm w-[200px] border border-opacity-20 border-[#732088] border-b-[5px] transform -translate-y-[3px] transition-all duration-200 ease-linear rounded-2xl cursor-pointer flex justify-center items-center hover:text-lg hover:border-[#3b7a1d]" 
+        className="bg-[#73e63e] hover:bg-[#5bb432] text-white font-bold py-2.5 text-sm w-[160px] border border-opacity-20 border-[#732088] border-b-[5px] transform -translate-y-[3px] transition-all duration-200 ease-linear rounded-2xl cursor-pointer flex justify-center items-center hover:text-lg hover:border-[#3b7a1d]" 
         type="button" 
         onClick={functionProp}
       >
