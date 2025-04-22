@@ -1,6 +1,6 @@
 import React from "react";
 import "./PostreCard.css";
-import WhatsAppButton from "../WhatsAppButton/WhatsAppButton";
+import WhatsAppButton from "../WhatsAppButton";
 
 interface PostreCardProps {
     nombre: string;
@@ -27,7 +27,7 @@ const PostreCard:React.FC <PostreCardProps> = ({nombre, descripcion, precio, ima
       <p className="poppins-semibold">{categoria}</p>
       <div className="card-footer">
       <span className="price">{`$${formatearPrecio(precio)}`}</span>        
-      <WhatsAppButton text="WhatsApp" />
+      <WhatsAppButton text="Contactanos" />
       </div>
         </div>
     )

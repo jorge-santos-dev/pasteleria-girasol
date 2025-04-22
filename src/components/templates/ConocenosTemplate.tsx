@@ -1,4 +1,5 @@
 import DescriptionSection from "../molecules/DescriptionSection";
+import conocenos from "../../assets/conocenos.png"
 
 const ConocenosTemplate = () => {
     return (
@@ -21,7 +22,7 @@ const ConocenosTemplate = () => {
                     </div>
                     <div className="mt-6 md:mt-0 md:w-1/2"> {/* Replaced image-container, added margin/width */}
                         {/* Ensure the image path is correct relative to the public folder or use an absolute URL */}
-                        <img src="/images/nuestra-historia.jpg" alt="Historia de El Girasol" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+                        <img className="border rounded-md shadow-lg" src={conocenos} />
                     </div>
                 </div>
             </section>

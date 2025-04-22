@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import NavElements from "./NavElements";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,42 +37,62 @@ export default function NavBar() {
             {/* Mobile Navigation */}
             {isMenuOpen && (
                 <div className="md:hidden bg-white py-4 px-4 shadow-inner">
-                    <div className="flex flex-col space-y-4">
-                        <Link 
+                    <div className="flex flex-col space-y-4 items-center">
+                        <NavLink 
                             to="/" 
-                            className="font-poppins text-gray-700 hover:text-primary transition-colors"
+                            className={({ isActive }) => 
+                                isActive 
+                                    ? "font-poppins font-bold text-primary transition-colors" 
+                                    : "font-poppins text-gray-700 hover:text-purple-700 transition-colors"
+                            }
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Inicio
-                        </Link>
-                        <Link 
+                        </NavLink>
+                        <NavLink 
                             to="/pasteles" 
-                            className="font-poppins text-gray-700 hover:text-primary transition-colors"
+                            className={({ isActive }) => 
+                                isActive 
+                                    ? "font-poppins font-bold text-primary transition-colors" 
+                                    : "font-poppins text-gray-700 hover:text-purple-700 transition-colors"
+                            }
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Pasteles
-                        </Link>
-                        <Link 
+                        </NavLink>
+                        <NavLink 
                             to="/postres" 
-                            className="font-poppins text-gray-700 hover:text-primary transition-colors"
+                            className={({ isActive }) => 
+                                isActive 
+                                    ? "font-poppins font-bold text-primary transition-colors" 
+                                    : "font-poppins text-gray-700 hover:text-purple-700 transition-colors"
+                            }
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Postres
-                        </Link>
-                        <Link 
+                        </NavLink>
+                        <NavLink 
                             to="/conocenos" 
-                            className="font-poppins text-gray-700 hover:text-primary transition-colors"
+                            className={({ isActive }) => 
+                                isActive 
+                                    ? "font-poppins font-bold text-primary transition-colors" 
+                                    : "font-poppins text-gray-700 hover:text-purple-700 transition-colors"
+                            }
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Conócenos
-                        </Link>
-                        <Link 
+                        </NavLink>
+                        <NavLink 
                             to="/contactanos" 
-                            className="font-poppins text-gray-700 hover:text-primary transition-colors"
+                            className={({ isActive }) => 
+                                isActive 
+                                    ? "font-poppins font-bold text-primary transition-colors" 
+                                    : "font-poppins text-gray-700 hover:text-purple-700 transition-colors"
+                            }
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Contáctanos
-                        </Link>
+                        </NavLink>
                     </div>
                 </div>
             )}

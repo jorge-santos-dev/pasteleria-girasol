@@ -1,6 +1,6 @@
 import "./PastelCard.css";
 import React from "react";
-import WhatsAppButton from "../WhatsAppButton/WhatsAppButton";
+import WhatsAppButton from "../WhatsAppButton";
 
 interface PastelCardProps {
   nombre: string;
@@ -56,7 +56,7 @@ const PastelCard: React.FC<PastelCardProps> = ({
       <p className="poppins-medium">{descripcion}</p>
       <p className="poppins-semibold">{categoria}</p>
       <div className="card-footer">
-      <span className="price">{`$${formatearPrecio(precio)}`}</span>        <WhatsAppButton functionProp={abrirWhatsApp} text="WhatsApp" />
+      <span className="price">{`$${formatearPrecio(precio)}`}</span>        <WhatsAppButton functionProp={abrirWhatsApp} text="Contactanos" />
       </div>
     </div>
   );
