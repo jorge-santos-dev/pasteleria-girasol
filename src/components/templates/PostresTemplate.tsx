@@ -1,30 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Postre } from "../../types/postres";
-import PostresSection from "../organisms/PostreSection/PostresSection";
 import DescriptionSection from "../molecules/DescriptionSection";
+import Loader from "../atoms/Loader";
 
-interface IPostresTemplate {
-    postres: Postre[]
+// Cargar PastelCard de forma perezosa
+const PastelCard = React.lazy(
+  () => import("../molecules/pastel_card/PastelCard")
+);
+
+interface IPostresTemplateProps {
+  postresData: Postre[];
 }
-const PostresTemplate:React.FC<IPostresTemplate> = ({postres}) => {
-    
-    console.log(postres);
-    
-    const [postresList, setPostresList] = useState<
-    { postres: Postre[] }[]
-  >([]);
-
-  useEffect(() => {
-    // Simulación de datos estáticos, en un entorno real cargarías estos datos de una API o base de datos.
-    setPostresList(postresList)
-  },[]);
-
-    return(
-        <div className="justify-center w-[90%] shadow-2xl pt-10 pb-10 mx-auto justify-items-center">
-                 <DescriptionSection title="Postres" description="Los mejores postres para tu paladar" />
-                <PostresSection  postres={postres} />
+const PostresTemplate: React.FC<IPostresTemplateProps> = ({ postresData }) => {
+  return (
+    <div className="justify-center w-[90%] shadow-2xl pt-10 pb-10 mx-auto justify-items-center">
+      <DescriptionSection
+        title="Postres"
+        description="Los mejores postres para tu paladar"
+      />
+      {/* Envolver el contenido que depende del componente perezoso con Suspense */}
+      <Suspense name="carga de pasteles" fallback={<Loader />}>
+        <div className="flex flex-wrap gap-6 justify-center mt-6">
+          {postresData.map((postre) => (
+            <PastelCard
+              key={postre.id}
+              nombre={postre.nombre}
+              descripcion={postre.descripcion}
+              precio={postre.precio}
+              imagen={postre.imagen}
+              categoria={postre.categoria}
+            />
+          ))}
         </div>
-    )
-}
+      </Suspense>
+    </div>
+  );
+};
 
 export default PostresTemplate;

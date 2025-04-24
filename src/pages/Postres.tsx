@@ -82,7 +82,7 @@ export default function Postres() {
 
   return (
     <div className="bg-white flex flex-wrap justify-center w-full">
-      <PostresTemplate postres={postresData} />
+      <PostresTemplate postresData={postresData} />
     </div>
   );
 }

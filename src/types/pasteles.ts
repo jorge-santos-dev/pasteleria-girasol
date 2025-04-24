@@ -3,7 +3,7 @@ export interface Pastel {
     nombre: string;
     descripcion: string;
     precio: number;
-    imagen: string;
     categoria: string;
+    imagen: string;
   }
   
