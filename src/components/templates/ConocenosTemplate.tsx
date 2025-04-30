@@ -8,7 +8,7 @@ const ConocenosTemplate = () => {
 
             {/* --- Historia Section --- */}
             <section className="py-12 px-6 md:px-12"> {/* Replaced historia-section with padding */}
-                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-8 font-dancing">Nuestra Historia</h2>
+                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-8 font-poppins">Nuestra Historia</h2>
                 <div className="md:flex md:items-center md:gap-12"> {/* Replaced content-wrapper with flex layout for medium screens and up */}
                     <div className="md:w-1/2 space-y-4 text-gray-700 font-poppins"> {/* Replaced text-content, added width, spacing, text color, font */}
                         <p>
@@ -29,7 +29,7 @@ const ConocenosTemplate = () => {
 
             {/* --- Valores Section --- */}
             <section className="py-12 px-6 md:px-12 bg-white"> {/* Replaced valores-section, added padding and background */}
-                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-10 font-dancing">Nuestros Valores</h2>
+                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-10 font-poppins">Nuestros Valores</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Replaced valores-grid with responsive grid */}
                     {/* Replaced valor-card with styled div */}
                     <div className="bg-girasol-cream p-6 rounded-lg shadow-md text-center transition-transform hover:scale-105">
@@ -56,7 +56,7 @@ const ConocenosTemplate = () => {
 
             {/* --- Equipo Section --- */}
             <section className="py-12 px-6 md:px-12"> {/* Replaced equipo-section with padding */}
-                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-6 font-dancing">Nuestro Equipo</h2>
+                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-6 font-poppins">Nuestro Equipo</h2>
                 <p className="text-center text-gray-700 max-w-2xl mx-auto mb-10 font-poppins"> {/* Replaced equipo-intro with centered text */}
                     Detrás de cada delicioso pastel hay un equipo apasionado y talentoso que trabaja con dedicación para hacer realidad tus dulces deseos.
                 </p>
@@ -75,7 +75,7 @@ const ConocenosTemplate = () => {
 
             {/* --- Contacto Section --- */}
             <section className="py-12 px-6 md:px-12 bg-girasol-yellow/20"> {/* Replaced contacto-section, added padding and light yellow background */}
-                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-10 font-dancing">Visítanos</h2>
+                <h2 className="text-3xl font-bold text-center text-girasol-purple mb-10 font-poppins">Visítanos</h2>
                 <div className="md:flex md:justify-around md:items-start text-center md:text-left space-y-8 md:space-y-0"> {/* Replaced contacto-info with flex layout */}
                     <div className="font-poppins"> {/* Replaced direccion */}
                         <h3 className="text-xl font-semibold text-girasol-brown mb-3">Dirección</h3>

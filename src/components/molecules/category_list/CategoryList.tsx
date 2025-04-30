@@ -1,6 +1,6 @@
 import "./CategoryList.css";
 import React from "react";
-import PastelCard from "../pastel_card/PastelCard";
+import PastelCard from "../PastelCard";
 
 interface Pastel {
   id: number;

@@ -5,7 +5,7 @@ import { Pastel } from "../../types/pasteles";
 
 // Cargar PastelCard de forma perezosa
 const PastelCard = React.lazy(
-  () => import("../molecules/pastel_card/PastelCard")
+  () => import("../molecules/PastelCard")
 );
 
 interface PastelesTemplateProps {
