@@ -14,7 +14,7 @@ const PastelCard: React.FC<PastelCardProps> = ({
   descripcion,
   precio,
   imagen,
-  categoria,
+  // categoria,
 }) => {
   return (
     <div className="rounded-xl shadow-lg p-2.5 mb-8 w-[380px] bg-[#f2cbf5] transition-all duration-300 ease-in-out border-b-5 border-r-5 border-[rgba(115,32,136,0.2)] hover:transform hover:-translate-y-[5px] hover:shadow-xl">
