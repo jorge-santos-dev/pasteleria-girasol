@@ -24,7 +24,7 @@ export default function PastelesTemplate({
 
       {/* Envolver el contenido que depende del componente perezoso con Suspense */}
       <Suspense name="carga de pasteles" fallback={<Loader />}>
-        <div className="flex flex-wrap gap-6 justify-center mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center mt-6 mr-[10px] ml-[10px]">
           {pastelesData.map((pastel) => (
             <PastelCard
               key={pastel.id}
